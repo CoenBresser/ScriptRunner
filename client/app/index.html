@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" lang="en" ng-app="scriptRunnerApp" ng-cloak manifest="cache.manifest">
+<head ng-controller="HeadController">
+  <title ng-bind="pageName()"></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <script type="text/javascript">
+    if(!window.console) {
+      console={};
+      console.log = function(){};
+      console.debug = function(){};
+      console.error = function(){};
+      console.info = function(){};
+    }
+  </script>
+  <link rel="apple-touch-icon" href="img/ios/AppIcon.appiconset/Icon-60@2x.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/ios/AppIcon.appiconset/Icon-60@3x.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/ios/AppIcon.appiconset/Icon-76.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/ios/AppIcon.appiconset/Icon-76@2x.png" />
+  <link rel="apple-touch-icon" sizes="58x58" href="img/ios/AppIcon.appiconset/Icon-Small@2x.png" />
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Script Runner</h1>
+  </header>
+  
+  <div ng-view></div>
+  
+  <footer>
+    <div title="About"></div>
+  </footer>
+</div>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-sanitize.js"></script>
+  <!-- script src="lib/angular/angular-animate.js"></script -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <!--script src="js/services.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script-->
+</body>
+</html>
